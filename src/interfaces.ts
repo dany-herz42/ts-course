@@ -28,6 +28,7 @@ class Pig implements Animal {
   }
 }
 
+// INDEX SIGNATURE
 class Dictionary {
   [id: string]: string
 }
