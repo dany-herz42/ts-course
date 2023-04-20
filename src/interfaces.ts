@@ -27,3 +27,14 @@ class Pig implements Animal {
     return "oinc";
   }
 }
+
+class Dictionary {
+  [id: string]: string
+}
+
+const newDictionary = new Dictionary();
+
+newDictionary['1a'] = 'user 1';
+newDictionary['2a'] = 'user 2';
+
+console.log(newDictionary)
