@@ -1,3 +1,4 @@
+import Character, { CharacterTwo } from "./classes/Character";
 // ####### SECTION 1: Basic types
 /*
   JS types
@@ -199,10 +200,10 @@ const element: any = null;
 
 const element1 = element as number;
 
-const input = document.getElementById('username') as HTMLInputElement;
-const input2 = <HTMLInputElement> document.getElementById('username') as HTMLInputElement;
+// const input = document.getElementById('username') as HTMLInputElement;
+// const input2 = <HTMLInputElement> document.getElementById('username') as HTMLInputElement;
 
-console.log(input.value)
+// console.log(input.value)
 
 // TYPE NARROWING
 
@@ -224,3 +225,12 @@ function process(thing: unknown) {
   }
   return 0;
 }
+
+// ####### SECTION 3:  POO
+
+const characterOne = new Character(1, "juan", 2, 34);
+// use settern
+characterOne.hp = 20
+console.log(characterOne);
+
+const charTwo = new CharacterTwo(2, "pedro", 3, 44);

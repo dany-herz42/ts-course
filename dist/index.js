@@ -1,4 +1,29 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Character_1 = __importStar(require("./classes/Character"));
 let dinosaursExtinction = 76000000;
 let favoriteDinosaur = "T-rex";
 let areExtincted = true;
@@ -75,9 +100,6 @@ const userGame = {
 };
 const element = null;
 const element1 = element;
-const input = document.getElementById('username');
-const input2 = document.getElementById('username');
-console.log(input.value);
 function returnValue(x) {
     if (typeof x === "string") {
         return x.toUpperCase();
@@ -93,4 +115,8 @@ function process(thing) {
     }
     return 0;
 }
+const characterOne = new Character_1.default(1, "juan", 2, 34);
+characterOne.hp = 20;
+console.log(characterOne);
+const charTwo = new Character_1.CharacterTwo(2, "pedro", 3, 44);
 //# sourceMappingURL=index.js.map
