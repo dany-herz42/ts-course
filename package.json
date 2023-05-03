@@ -1,0 +1,21 @@
+{
+  "name": "curso-ts",
+  "version": "1.0.0",
+  "description": "TypeScript advanced course",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dany-herz42/ts-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dany-herz42/ts-course/issues"
+  },
+  "homepage": "https://github.com/dany-herz42/ts-course#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
